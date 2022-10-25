@@ -29,7 +29,7 @@ spec:
 # the name of the container is specified below
         - name: stedi-kevin-collins
 # the image is a prebuild file containing the operating system
-          image: naptime2022/kevinnginxrepository
+          image: gcr.io/cit262-group-project/stedi-kevin-collins
 # The ports is a list of tcp ports the pod listens on
           ports:
 # The container port is a specific port the pod listens on
