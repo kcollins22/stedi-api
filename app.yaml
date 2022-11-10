@@ -94,7 +94,7 @@ metadata:
   name: stedi-nodeport-kevin-collins
 spec:
   selector:
-    app: stedi
+    app: stedi-kevin-collins
   type: NodePort
   ports:
     - port: 80
@@ -105,7 +105,7 @@ kind: Ingress
 metadata:
   name: stedi-ingress-kevin-collins
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: stedi-public
+    kubernetes.io/ingress.global-static-ip-name: stedi-public-kevin-collins
     networking.gke.io/managed-certificates: stedi-certificate-kevin-collins
     kubernetes.io/ingress.allow-http: "false"
     kubernetes.io/ingress.class: "gce"
@@ -119,7 +119,7 @@ spec:
 apiVersion: networking.gke.io/v1
 kind: ManagedCertificate
 metadata:
-  name: stedi-certificate
+  name: stedi-certificate-kevin-collins
 spec:
   domains:
     - kevincollins.cit262.com
