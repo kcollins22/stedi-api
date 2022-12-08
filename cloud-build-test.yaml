@@ -19,6 +19,7 @@ steps:
       - run
       - --filename=app.yaml
       - --image=gcr.io/$PROJECT_ID/stedi-kevin-collins:$SHORT_SHA
+      - --output=/tmp/outputtest
       - --location=us-central1-c
       - --cluster=cluster-1
 
